@@ -21,6 +21,13 @@ class PhotosController < ApplicationController
     end  
   end
 
+  # def like 
+  #   photo = Photo.find(params[:id])
+  #   #current user can like this photo
+  #   Like.create(user_id: current_user.id, photo_id: photo.id)
+  #   render json: photo
+  # end 
+
  
 
   def destroy 

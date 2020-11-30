@@ -28,8 +28,9 @@ class LikesController < ApplicationController
  end 
 
   def destroy
-    like = current_user.likes.find(params[:id])
-    like.destroy
+    like = Like.find(params[:id])
+    like.destroy 
+    render json: like
   end
 
 
