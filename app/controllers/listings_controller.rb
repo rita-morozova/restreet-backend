@@ -22,7 +22,7 @@ class ListingsController < ApplicationController
 
   def update 
     listing = Listing.find(params[:id])
-    listing.update(listing_params)
+    listing.update(edit_params)
     render json: listing 
   end 
 
@@ -38,5 +38,8 @@ class ListingsController < ApplicationController
     params.require(:listing).permit(:lat, :lng, :address, :zipcode, :description, :photo, :user_id, :adopted)
   end 
 
+  def edit_params
+    params.require(:listing).permit(:adopted)
+  end 
 
 end
