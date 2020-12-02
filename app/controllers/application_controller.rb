@@ -36,12 +36,7 @@ class ApplicationController < ActionController::API
     !!current_user 
   end 
 
-  def artsy_token
-    api_url = URI.parse('https://api.artsy.net/api/tokens/xapp_token')
-    response = Net::HTTP.post_form(api_url, client_id: ENV['ARTSY_CLIENT_ID'], client_secret: ENV['ARTSY_CLIENT_SECRET'])
-    xapp_token = JSON.parse(response.body)['token']
-end
-
+  
   # Prevent unauthorized access
   # def authorized
   #   render json: {message: 'Please log in'}, status: :unauthorized unless logged_in?

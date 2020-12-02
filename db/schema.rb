@@ -78,7 +78,6 @@ ActiveRecord::Schema.define(version: 2020_11_29_011429) do
     t.bigint "user_id", null: false
     t.string "username"
     t.string "image"
-    t.integer "count", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_photos_on_user_id"
