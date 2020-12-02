@@ -1,5 +1,5 @@
 class LikeSerializer < ActiveModel::Serializer
-  attributes :id, :user_id, :photo_id, :photo
+  attributes :id, :user_id, :photo_id
 
 
 

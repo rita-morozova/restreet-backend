@@ -26,11 +26,12 @@ get '/notes' => 'notes#index'
 post '/notes', to: 'notes#create'
 
 put 'photo/:id/likes'  => 'likes#update'
+put 'photos/:id' => 'photos#update'
 
-put '/likes' => 'likes#update'
+put '/likes/:id' => 'likes#update'
 delete '/likes/:id', to: 'likes#destroy'
 
-get '/photos/:id/liked', to: 'photos#liked?'
+
 
 
 end

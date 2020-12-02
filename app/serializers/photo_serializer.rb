@@ -1,5 +1,5 @@
 class PhotoSerializer < ActiveModel::Serializer
-  attributes :id, :image, :username, :count, :liked
+  attributes :id, :image, :username, :count
 
-  has_many :likes
+  # has_many :likes
 end
