@@ -25,13 +25,7 @@ put '/photos/:id', to: 'photos#update'
 get '/notes' => 'notes#index'
 post '/notes', to: 'notes#create'
 
-put 'photo/:id/likes'  => 'likes#update'
-put 'photos/:id' => 'photos#update'
-
-put '/likes/:id' => 'likes#update'
 delete '/likes/:id', to: 'likes#destroy'
-
-
 
 
 end
