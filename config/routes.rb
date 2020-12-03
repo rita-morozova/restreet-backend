@@ -26,6 +26,6 @@ get '/notes' => 'notes#index'
 post '/notes', to: 'notes#create'
 
 delete '/likes/:id', to: 'likes#destroy'
-
+delete '/photos/:id', to: 'photos#destroy'
 
 end

@@ -21,15 +21,6 @@ class PhotosController < ApplicationController
     end  
   end
 
-  # def update 
-  #   photo = Photo.find(params[:id])
-  #   photo.update(edit_params)
-  #     if photo.valid?
-  #         render json: photo
-  #     else
-  #         render json: photo.errors
-  #     end
-  # end 
 
   def destroy 
     photo = Photo.find(params[:id])
