@@ -1,7 +1,5 @@
 class UsersController < ApplicationController
   # skip_before_action :authorized, only: [:create, :index, :login, :show, :profile ]
-  # wrap_parameters :user, include: [:username, :password, :password_confirmation, :email]
-
   
   def index 
     users = User.all 

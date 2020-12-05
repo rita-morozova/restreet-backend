@@ -145,9 +145,9 @@ Favvideo.create(video_id: 2, user_id:1)
 Favvideo.create(video_id: 3, user_id:2)
 Favvideo.create(video_id: 4, user_id:1)
 
-Photo.create(user_id: u1.id, username: u1.username, image:"https://blvcks.com/wp-content/uploads/2017/09/o4j_Hmqy2-g.jpg")
-Photo.create(user_id: u1.id, username: u2.username, image:"https://cdn-images.farfetch-contents.com/12/56/27/14/12562714_11933138_300.jpg" )
-Photo.create(user_id: u2.id, username: u3.username, image: "https://images.timberland.com/is/image/timberland/10061024-HERO?wid=720&hei=720&fit=constrain,1&qlt=85,1&op_usm=1,1,6,0")
+# Photo.create(user_id: u1.id, username: u1.username, image:"https://blvcks.com/wp-content/uploads/2017/09/o4j_Hmqy2-g.jpg")
+# Photo.create(user_id: u1.id, username: u2.username, image:"https://cdn-images.farfetch-contents.com/12/56/27/14/12562714_11933138_300.jpg" )
+# Photo.create(user_id: u2.id, username: u3.username, image: "https://images.timberland.com/is/image/timberland/10061024-HERO?wid=720&hei=720&fit=constrain,1&qlt=85,1&op_usm=1,1,6,0")
 
 Like.create(user_id: u1.id, photo_id: 1)
 Like.create(user_id: u1.id, photo_id: 2)
