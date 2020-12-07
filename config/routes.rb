@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
  resources :users
- resources :arts
- resources :videos
- resources :favvideos
- resources :favorites 
+ resources :arts, only: [:index, :show]
+ resources :videos, only: [:index, :show]
+ resources :favvideos, only: [:index, :show, :create, :destroy]
+ resources :favorites, only: [:index, :show, :create, :destroy] 
  resources :walls 
- resources :listings
- resources :notes
- resources :photos
- resources :likes 
+ resources :listings, only: [:index, :show, :create, :update, :destroy]
+ resources :notes, only: [:index,  :create, :update, :destroy]
+ resources :photos, only: [:index, :create, :update, :destroy, :show]
+ resources :likes
 
 
 get '/profile', to: 'users#profile'

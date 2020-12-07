@@ -1,5 +1,5 @@
 class FavvideosController < ApplicationController
-  # skip_before_action :authorized
+  # before_action :authorized, only: [:create, :index, :show, :destroy]
  
   def index 
     favvideos = Favvideo.all 

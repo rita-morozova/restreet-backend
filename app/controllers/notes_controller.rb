@@ -1,5 +1,5 @@
 class NotesController < ApplicationController
-  # skip_before_action :authorized
+  # before_action :authorized
 
   def index 
     notes = Note.all  
