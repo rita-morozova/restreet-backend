@@ -20,10 +20,11 @@ RE-STREET is an art-platform for street artists. Here artists can find locations
 Ruby on Rails
 
 ## Tools
-* PostgresSQL
+* PostgreSQL
 * BCrypt
 * JSON Web Tokens
-* Cloudinary (photo uploads)
+* Cloudinary - a cloud-based image and video management service, is utilized to handle hosting of user generated images
+* Figaro - to secure the configuration of API keys
 
 
 #### Created By  _**Margarita Morozova**_
