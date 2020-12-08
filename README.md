@@ -1,4 +1,4 @@
-# _RE-STREET_
+# RE-STREET
 
 #### The API for RE-STREET
 #### [Client-side Repository](https://github.com/rita-morozova/restreet-frontend)
