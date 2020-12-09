@@ -29,6 +29,5 @@ Ruby on Rails
 
 #### Created By  _**Margarita Morozova**_
 
-### Legal
-Copyright (c) 2020 Margarita Morozova
+
 
