@@ -1,6 +1,5 @@
 class PhotosController < ApplicationController
-  # before_action :authorized
-
+ 
   def index
     photos = Photo.all
     render json: photos

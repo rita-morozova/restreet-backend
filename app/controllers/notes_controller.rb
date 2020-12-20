@@ -1,6 +1,5 @@
 class NotesController < ApplicationController
-  # before_action :authorized
-
+  
   def index 
     notes = Note.all  
     render json: notes
@@ -19,16 +18,6 @@ class NotesController < ApplicationController
        render json: @notes.errors
     end 
   end
-
-  def update
-    note= Note.find(params[:id])
-    note.update(note_params)
-    if (note.valid?)
-        render json: note
-    else
-        render json: {errors: note.errors.full_messages, id: note.id }, status: :not_acceptable
-    end
-end
 
     def destroy
         note = Note.find(params[:id])

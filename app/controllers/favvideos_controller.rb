@@ -1,6 +1,5 @@
 class FavvideosController < ApplicationController
-  # before_action :authorized, only: [:create, :index, :show, :destroy]
- 
+
   def index 
     favvideos = Favvideo.all 
     render json: favvideos
