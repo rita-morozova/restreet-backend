@@ -14,6 +14,7 @@ RE-STREET is an art-platform for street artists. Here artists can find locations
 - Run `rails db:create`  to create a database
 - Run `rails db:migrate`
 - Run `rails db:seed` (this is important! In order to see all art and videos on the website, you should seed the database) 
+- To be able to upload photos, you need to obtain Cloudinary API keys from [Cloudinary](https://cloudinary.com/) and save 'cloud_name', 'cloud_api_key', and 'cloud_api_secret' in application.yml file (you have to create application.yml in config folder manually)
 - Start the server by running `rails s`
 
 ## Build with
