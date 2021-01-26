@@ -6,32 +6,16 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
-# Favorite.destroy_all
 Listing.destroy_all
-# Wall.destroy_all
 Video.destroy_all
-# Note.destroy_all
-# Favvideo.destroy_all
 Art.destroy_all
-# Photo.destroy_all
-# Like.destroy_all
 
-#TEST SEEDS
 
 u1 = User.create(username: "Iren", password_digest: "123", email: "iren@gmail.com", name: "Rita", location: "Rio", bio:"Not much", picture:"https://media.artsper.com/artwork/904362_1_m.jpg?MjQ2MzE4MDAxNjA0NTIyMTM3")
 
 
 Listing.create(lat: 47.60442558349617, lng: -122.32429296318571, address: "325 9th Ave, Seattle, WA", zipcode: 98104, description: 'Make our patients happier', photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_kR5a0NayXASSmXM-09UpzbXjQnGvPYXnwQ&usqp=CAU', user_id: 1, adopted: true)
 Listing.create(lat: 47.61914294602053, lng: -122.34429196808595, address: "620 Denny Way, Seattle, WA", zipcode: 98109, description: 'Local Gas Station', photo: 'https://images.unsplash.com/photo-1549416616-cb2d6597c806?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FzJTIwc3RhdGlvbiUyMHdhbGx8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',  user_id: 1, adopted: false)
-
-
-# Wall.create(listing_id: 1, user_id: 2)
-# Wall.create(listing_id: 2, user_id: 1)
-# Wall.create(listing_id: 3, user_id: 3)
-# Wall.create(listing_id: 4, user_id: 1)
-# Wall.create(listing_id: 5, user_id: 1)
-# Wall.create(listing_id: 6, user_id: 3)
-
 
 
 Art.create(name: "Warhol (art dealer)", artist: "Le Closier", year: 2020, image_url: "https://res.cloudinary.com/diexi8g0j/image/upload/v1606942143/arts/904362_1_m_cmsqes.jpg")
@@ -99,13 +83,6 @@ Art.create(name: 'Faces 1 & 2' , artist: "Hush" , year: 2019 , image_url: "https
 Art.create(name: "90's Galore",  artist: "MadC" , year: 2019, image_url: "https://res.cloudinary.com/diexi8g0j/image/upload/v1607383786/arts/668742_1_m_plbc02.jpg")
 Art.create(name: 'Marilyn Monroe, I' , artist: 'James Rosenquist', year: 1962, image_url: "https://res.cloudinary.com/diexi8g0j/image/upload/v1607383941/arts/James-Rosenquist.-Marilyn-Monore-I-303x395_anbpkb.jpg")
 
-
-
-# Favorite.create(user_id: 1, art_id: 5)
-# Favorite.create(user_id: 1, art_id: 6)
-# Favorite.create(user_id: 1, art_id: 8)
-# Favorite.create(user_id: 2, art_id: 1)
-
 Video.create(name: 'Basic Street art technique' , description: 'To paint freely and as well as you can, you need good can control. In this video I show you a few tips that you can try to improve your technique.' , url:'https://www.youtube.com/watch?v=xGz6SvxtJwo')
 Video.create(name:'How to be a Street Artist with Apexer', description: 'In this episode of Art School, Apexer explains the foundation of lettering and demonstrates the progression of writing in a tag style, to a more three-dimensional form, to fully abstracting letterforms. He also explains the connection between street art sketching and spray painting.', url:'https://www.youtube.com/watch?v=qV2OTD5fMvk')
 Video.create(name:'Street art lesson part 1 // The basics', description: 'Welcome to my Graffiti and street art course, a 10 based lessons tutorial brought to you to learn everything you need to know to paint beautiful murals!', url:'https://www.youtube.com/watch?v=A1VNLRwTNNg')
@@ -138,22 +115,3 @@ Video.create(name:"Bubble Gum Girl Pop Art on Newspaper Canvas | Acrylic Paintin
 Video.create(name:"POP ART Acrylic Painting for Beginners", description:"This video shows how you can paint colorful pop art painting on canvas , also covers how to fix a mistake. This art is one of the most significant art movements of the twentieth century", url:"https://www.youtube.com/watch?v=wGdOhS5o7Jo")
 Video.create(name:"New! Street Art!", description:"Bianca Burrows and Jason Collab in a mixed media street art styled piece", url:"https://www.youtube.com/watch?v=7JR6L1qLAeU")
 
-# Favvideo.create(video_id: 1, user_id:1)
-# Favvideo.create(video_id: 2, user_id:1)
-# Favvideo.create(video_id: 3, user_id:2)
-# Favvideo.create(video_id: 4, user_id:1)
-
-# Photo.create(user_id: u1.id, username: u1.username, image:"https://blvcks.com/wp-content/uploads/2017/09/o4j_Hmqy2-g.jpg")
-# Photo.create(user_id: u1.id, username: u2.username, image:"https://cdn-images.farfetch-contents.com/12/56/27/14/12562714_11933138_300.jpg" )
-# Photo.create(user_id: u2.id, username: u3.username, image: "https://images.timberland.com/is/image/timberland/10061024-HERO?wid=720&hei=720&fit=constrain,1&qlt=85,1&op_usm=1,1,6,0")
-
-# Like.create(user_id: u1.id, photo_id: 1)
-# Like.create(user_id: u1.id, photo_id: 2)
-# Like.create(user_id: u2.id, photo_id: 1)
-
-# Note.create(user_id: 1, video_id: 1, content: 'Prepare a big piece of paper')
-# Note.create(user_id: 1, video_id: 1, content: 'Cut it in shape of heart')
-# Note.create(user_id: 1, video_id: 1, content: 'Paint yellow')
-# Note.create(user_id: 1, video_id: 2, content: 'Boring stuff')
-# Note.create(user_id: 1, video_id: 2, content: 'Min 4 quite interesting')
-# Note.create(user_id: 2, video_id: 1, content: 'BBBB I know better')

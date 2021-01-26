@@ -5,11 +5,7 @@ class LikesController < ApplicationController
     render json: likes
  end
 
- def show 
-  like = Like.find(params[:id])
-  render json: like
- end 
-
+ 
   def create
     # prevent from liking for other users
     params[:like][:user_id] = current_user.id
@@ -21,16 +17,16 @@ class LikesController < ApplicationController
     end
   end
 
-  def update
-    like = Like.find(params[:id])
-    like.update(user_id:current_user.id, photo_id: params[:photo_id])
-    render json: like
- end 
+#   def update
+#     like = Like.find(params[:id])
+#     like.update(user_id:current_user.id, photo_id: params[:photo_id])
+#     render json: like
+#  end 
 
-  def destroy
-    like = Like.find(params[:id])
-    like.destroy 
-    render json: like
-  end
+#   def destroy
+#     like = Like.find(params[:id])
+#     like.destroy 
+#     render json: like
+#   end
 
 end

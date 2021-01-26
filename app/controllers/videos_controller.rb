@@ -9,4 +9,5 @@ class VideosController < ApplicationController
     video=Video.find(params[:id])
     render json: video
   end 
+  
 end

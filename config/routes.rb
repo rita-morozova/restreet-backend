@@ -4,7 +4,7 @@ Rails.application.routes.draw do
  resources :videos, only: [:index, :show]
  resources :favvideos, only: [:index, :show, :create, :destroy]
  resources :favorites, only: [:index, :show, :create, :destroy] 
- resources :walls 
+ resources :walls, only: [:index, :show, :destroy] 
  resources :listings, only: [:index, :show, :create, :update, :destroy]
  resources :notes, only: [:index,  :create, :update, :destroy]
  resources :photos, only: [:index, :create, :update, :destroy, :show]
