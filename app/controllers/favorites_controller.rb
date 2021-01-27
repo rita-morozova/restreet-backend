@@ -19,15 +19,16 @@ class FavoritesController < ApplicationController
     end 
   end
 
-    def destroy
-        favorite = Favorite.find(params[:id])
-        favorite.destroy
-        render json: favorite
-    end
+  def destroy
+    favorite = Favorite.find(params[:id])
+    favorite.destroy
+    render json: favorite
+  end
 
-private
+  private
 
-def favorite_params
+  def favorite_params
     params.require(:favorite).permit(:user_id, :art_id)
-end
+  end
+  
 end

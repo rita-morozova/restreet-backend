@@ -16,16 +16,13 @@ class User < ApplicationRecord
   has_many :photos, through: :likes, dependent: :destroy
   has_many :photos
  
-  
-
   has_many :favvideos
   has_many :videos, through: :favvideos, dependent: :destroy
 
   validates :email, uniqueness: true, on: :create
   validates :username, uniqueness: true, on: :create
-  # validates :password_confirmation, presence: true, on: :create
-  # validates :password, length: {in: 6..20}
-  # validates :username, length: {minimum: 5}
+  validates :password, length: {in: 6..20}
+  validates :username, length: {minimum: 4}
   validates :bio, length: {maximum: 500}
 
   validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i

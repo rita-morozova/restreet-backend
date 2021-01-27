@@ -1,6 +1,5 @@
 class WallsController < ApplicationController
-  # skip_before_action :authorized
-
+  
   def index
     walls = Wall.all
     render json: walls

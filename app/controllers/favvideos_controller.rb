@@ -19,15 +19,16 @@ class FavvideosController < ApplicationController
     end 
   end
 
-    def destroy
-        favvideo = Favvideo.find(params[:id])
-        favvideo.destroy
-        render json: favvideo
-    end
+  def destroy
+    favvideo = Favvideo.find(params[:id])
+    favvideo.destroy
+    render json: favvideo
+  end
 
-private
+  private
 
-def favvideo_params
+  def favvideo_params
     params.require(:favvideo).permit(:user_id, :video_id)
-end
+  end
+  
 end
