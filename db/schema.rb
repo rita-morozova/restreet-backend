@@ -90,7 +90,6 @@ ActiveRecord::Schema.define(version: 2020_11_29_011429) do
     t.string "name"
     t.string "location"
     t.string "bio"
-    t.string "picture"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

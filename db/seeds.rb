@@ -11,7 +11,7 @@ Video.destroy_all
 Art.destroy_all
 
 
-u1 = User.create(username: "Iren", password_digest: "123", email: "iren@gmail.com", name: "Rita", location: "Rio", bio:"Not much", picture:"https://media.artsper.com/artwork/904362_1_m.jpg?MjQ2MzE4MDAxNjA0NTIyMTM3")
+u1 = User.create(username: "Iren", password_digest: "123", email: "iren@gmail.com", name: "Rita", location: "Rio", bio:"Not much")
 
 
 Listing.create(lat: 47.60442558349617, lng: -122.32429296318571, address: "325 9th Ave, Seattle, WA", zipcode: 98104, description: 'Make our patients happier', photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_kR5a0NayXASSmXM-09UpzbXjQnGvPYXnwQ&usqp=CAU', user_id: 1, adopted: true)
