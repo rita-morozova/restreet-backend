@@ -11,11 +11,11 @@ Video.destroy_all
 Art.destroy_all
 
 
-u1 = User.create(username: "Iren", password_digest: "123", email: "iren@gmail.com", name: "Rita", location: "Rio", bio:"Not much")
+u1 = User.create!(username: "Iren", password_digest: "123456", email: "iren@gmail.com", name: "Rita", location: "Rio", bio:"Not much")
 
 
-Listing.create(lat: 47.60442558349617, lng: -122.32429296318571, address: "325 9th Ave, Seattle, WA", zipcode: 98104, description: 'Make our patients happier', photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_kR5a0NayXASSmXM-09UpzbXjQnGvPYXnwQ&usqp=CAU', user_id: 1, adopted: true)
-Listing.create(lat: 47.61914294602053, lng: -122.34429196808595, address: "620 Denny Way, Seattle, WA", zipcode: 98109, description: 'Local Gas Station', photo: 'https://images.unsplash.com/photo-1549416616-cb2d6597c806?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FzJTIwc3RhdGlvbiUyMHdhbGx8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',  user_id: 1, adopted: false)
+Listing.create!(lat: 47.60442558349617, lng: -122.32429296318571, address: "325 9th Ave, Seattle, WA", zipcode: 98104, description: 'Make our patients happier', photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_kR5a0NayXASSmXM-09UpzbXjQnGvPYXnwQ&usqp=CAU', user_id: 1, adopted: true)
+Listing.create!(lat: 47.61914294602053, lng: -122.34429196808595, address: "620 Denny Way, Seattle, WA", zipcode: 98109, description: 'Local Gas Station', photo: 'https://images.unsplash.com/photo-1549416616-cb2d6597c806?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FzJTIwc3RhdGlvbiUyMHdhbGx8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',  user_id: 1, adopted: false)
 
 
 Art.create(name: "Warhol (art dealer)", artist: "Le Closier", year: 2020, image_url: "https://res.cloudinary.com/diexi8g0j/image/upload/v1606942143/arts/904362_1_m_cmsqes.jpg")

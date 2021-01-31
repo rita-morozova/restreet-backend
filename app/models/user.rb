@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   has_secure_password 
-
+ 
   has_many :favorites
   has_many :arts, through: :favorites, dependent: :destroy
 
@@ -21,10 +21,7 @@ class User < ApplicationRecord
 
   validates :email, uniqueness: true, on: :create
   validates :username, uniqueness: true, on: :create
-  validates :password, length: {in: 6..20}
-  validates :username, length: {minimum: 4}
-  validates :bio, length: {maximum: 500}
-
+ 
   validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
   
 end
