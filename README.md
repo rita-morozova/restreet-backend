@@ -1,7 +1,12 @@
 # RE-STREET
 
 #### The API for RE-STREET
+
 #### [Client-side Repository](https://github.com/rita-morozova/restreet-frontend)
+
+#### [The demo can be viewed on Netlify](https://re-street.netlify.app/) 
+
+#### [A video walkthrough of the original app](https://www.youtube.com/watch?v=oPv08cnf1gM&feature=youtu.be)
 
 ## Description
 
