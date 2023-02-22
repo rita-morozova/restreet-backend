@@ -14,7 +14,7 @@ RE-STREET is an art-platform for street artists. Here artists can find locations
 
 ## Getting Started
 - Fork and clone this repo
-- Navigate to final-backend
+- Navigate to restreet-backend
 - Run `bundle install` to install all dependencies 
 - Run `rails db:create`  to create a database
 - Run `rails db:migrate`
